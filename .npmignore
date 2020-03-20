@@ -1,0 +1,6 @@
+.github/
+.vscode/
+coverage/
+test/
+.eslintrc.json
+.editorconfig

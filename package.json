@@ -1,0 +1,50 @@
+{
+  "name": "@tylervigario/performance",
+  "version": "1.0.0",
+  "description": "ES Module for testing performance in Node CLI.",
+  "module": "lib/performance.mjs",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint --config ./.eslintrc.json ./**/*.mjs",
+    "test": "ava ./test/**/*.mjs --verbose",
+    "test:coverage": "c8 ava ./test/**/*.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeekLogic/performance.git"
+  },
+  "keywords": [
+    "performance",
+    "testing"
+  ],
+  "author": {
+    "name": "Tyler Vigario",
+    "email": "tylervigario90@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MeekLogic/performance/issues"
+  },
+  "homepage": "https://github.com/MeekLogic/performance#readme",
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "ava": "^3.5.0",
+    "c8": "^7.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {},
+  "ava": {
+    "nodeArguments": [
+      "--experimental-modules"
+    ]
+  },
+  "c8": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}

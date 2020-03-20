@@ -2,7 +2,7 @@
   "name": "@tylervigario/performance",
   "version": "1.0.0",
   "description": "ES Module for testing performance in Node CLI.",
-  "module": "lib/performance.mjs",
+  "module": "./lib/performance.mjs",
   "type": "module",
   "scripts": {
     "lint": "eslint --config ./.eslintrc.json ./**/*.mjs",

@@ -5,6 +5,7 @@
   "main": "./lib/performance.mjs",
   "type": "module",
   "scripts": {
+    "example": "node --experimental-modules ./example/index.mjs",
     "lint": "eslint --config ./.eslintrc.json ./**/*.mjs",
     "test": "ava ./test/**/*.mjs --verbose",
     "test:coverage": "c8 ava ./test/**/*.mjs"
@@ -30,7 +31,7 @@
     "node": ">=12"
   },
   "devDependencies": {
-    "ava": "^3.5.0",
+    "ava": "^3.5.1",
     "c8": "^7.1.0",
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0"

@@ -6,6 +6,11 @@
     "node": true
   },
   "extends": [
+    "eslint:recommended",
+    "plugin:ava/recommended",
+    "plugin:node/recommended-module",
+    "plugin:import/errors",
+    "plugin:import/warnings",
     "google"
   ],
   "globals": {
@@ -17,6 +22,6 @@
     "sourceType": "module"
   },
   "rules": {
-    "max-len": 1
+    "max-len": "warn"
   }
 }

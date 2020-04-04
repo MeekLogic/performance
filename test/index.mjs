@@ -1,9 +1,9 @@
 import test from 'ava';
-import {test as perf} from '../lib/performance.mjs';
+import Performance from '../lib/performance.mjs';
 
 test('Invalid parameters', (t) => {
   t.throws(() => {
-    perf(() => {
+    Performance.test(() => {
       return 'no name';
     });
   }, {instanceOf: TypeError});

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "example": "node --experimental-modules ./example/index.mjs",
-    "lint": "eslint --config .eslintrc.json --ext .mjs lib/ test/",
+    "lint": "eslint --config .eslintrc.json lib/ test/",
     "test": "ava --verbose",
     "test:coverage": "c8 ava"
   },

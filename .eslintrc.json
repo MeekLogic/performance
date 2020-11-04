@@ -22,6 +22,9 @@
     "plugin:jsdoc/recommended",
     "plugin:security/recommended"
   ],
+  "overrides": [{
+    "files": ["*.js", "*.mjs"]
+  }],
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module"
@@ -35,6 +38,7 @@
     "import/unambiguous": "error",
     "import/no-commonjs": "error",
     "import/no-amd": "error",
-    "import/no-deprecated": "error"
+    "import/no-deprecated": "error",
+    "import/extensions": ["error", "always"]
   }
 }
